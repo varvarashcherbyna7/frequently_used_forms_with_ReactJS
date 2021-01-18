@@ -1,0 +1,54 @@
+@media only screen and (min-width: 320px) and (max-width: 680px)
+
+  .radioInputsContainerForm9
+    margin-top: 5px
+    margin-bottom: 5px
+    padding-left: 3px
+
+    .inputFeedbackRadioForm9
+      font-size: 9px
+      bottom: -9px
+
+  .radioInputDivForm9
+    justify-content: space-around
+    margin: 0
+    input
+      &:checked + label::after
+        width: 10px
+        height: 10px
+    label
+      align-self: baseline
+      width: 36px
+      font-size: 10px
+      font-weight: bold
+      margin-left: 0
+      &:before
+        height: 10px
+        width: 10px
+        top: 1px
+        left: -13.5px
+      &:after
+        top: -6px
+        left: -21px
+
+    label[for="Visa0"]
+      width: 21px
+    label[for="MasterCard1"]
+      width: 62px
+    label[for="PayPal2"]
+      width: 35px
+    label[for="Check3"]
+      width: 30px
+    label[for="Other4"]
+      width: 26px
+
+  .radioInputDivForm9 input[type="radio"]:checked + label::before
+    height: 10px
+    width: 10px
+
+  //.inputFeedbackRadioForm9
+  //  position: absolute
+  //  right: 3px
+  //  bottom: -11px
+  //  letter-spacing: 0.3px
+  //  font-size: 10px

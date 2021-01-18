@@ -1,0 +1,40 @@
+@import "../../variables_form4"
+
+.subjectDivForm4
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  padding-bottom: 15px
+
+.subjectDivForm4 .inputDivForm4 input
+  width: 96.875%
+
+.inputTextForm4
+  align-self: flex-start
+  margin-left: 2px
+  margin-bottom: 5px
+  font-size: 12px
+
+.inputDivForm4 input
+  height: 20px
+  border: 1px solid $main-border-color
+  padding: 4px
+  border-radius: 3px
+  outline: 0
+
+  &:active, &:focus
+    border: 1px solid $active-input-border-color
+    box-shadow: 0 0 5px $active-input-shadow-color
+
+.subjectInputDivForm4
+  position: relative
+
+  i
+    position: absolute
+    top: 26px
+    right: 9px
+    font-size: large
+    z-index: 1
+    color: $icon-color
+
+@import "SubjectInput_320"

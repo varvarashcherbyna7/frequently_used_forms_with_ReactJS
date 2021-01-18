@@ -1,0 +1,36 @@
+@import "../../../variables_form3"
+
+.inputContainerForm3
+  position: relative
+
+.nameDivForm3
+  display: flex
+  justify-content: space-between
+  padding-top: 15px
+
+  div input
+    width: 151px
+    border: 1px solid $input-registration-border-color
+    padding: 7px
+    border-radius: 5px
+    outline: none
+
+    &:focus
+      border: 1px solid $input-focus-border-color
+      box-shadow: 0 0 5px $input-focus-shadow-color
+
+    [placeholder]:focus
+      font-weight: bold
+
+.errorForm3
+  border: 1px solid $error-color
+
+.inputFeedbackForm3
+  position: absolute
+  font-size: 11px
+  letter-spacing: 0.5px
+  color: $error-color
+  bottom: -13.5px
+  left: 9px
+
+@import "NameInputs_320"

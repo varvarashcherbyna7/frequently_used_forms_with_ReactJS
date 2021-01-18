@@ -1,0 +1,60 @@
+@import "../../variables_form5"
+
+.nameEmailInputContainer
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+.nameEmailInputText
+  align-self: flex-start
+  padding-left: 5px
+  margin-bottom: 2px
+  text-transform: uppercase
+  letter-spacing: 1px
+  position: relative
+
+.nameEmailImgDiv img
+  width: 7px
+  position: absolute
+  top: 1px
+
+.nameEmailInputDiv
+  align-self: flex-start
+
+  input
+    width: 203px
+    height: 20px
+    border: 1px solid $main-border-color
+    border-radius: 5px
+    padding-bottom: 6px
+    padding-top: 6px
+    outline: none
+
+    &:active, &:focus
+      border: 1px solid $active-input-border-color
+      box-shadow: 0 0 5px $active-input-shadow-color
+
+  input[placeholder]
+    padding-left: 5px
+    font-size: 12px
+    letter-spacing: 1px
+
+.nameEmailInputDiv
+  position: relative
+
+.nameEmailErrors
+  width: 240px
+  border: 1px solid $error-color
+
+.nameEmailInputFeedback
+  position: absolute
+  top: 34px
+  right: 8px
+  color: $error-color
+  font-size: 11px
+  letter-spacing: 0.6px
+
+@import "InputsNameEmail_320"
+
+
+

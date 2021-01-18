@@ -1,0 +1,33 @@
+@import "../variables_form6"
+
+.btnContainerForm6
+  display: flex
+  justify-content: flex-end
+  width: 98%
+  border-top: 1px solid $main-border-color
+  padding-top: 20px
+  padding-bottom: 20px
+  margin: 0 auto
+
+.btnDivForm6
+  margin-right: 15px
+
+  input
+    padding: 9px 30px
+    border: 1px solid $main-border-color
+    border-radius: 5px
+    font-weight: bold
+    color: $input-text-color
+    outline: 0
+    transition: 0.5s
+
+    [value]
+      color: #32302e
+
+    &:hover
+      transition: 0.5s
+      background-color: $input-hover-color
+      font-weight: bold
+      color: $input-hover-text-color
+
+@import "SubmitButton_320"

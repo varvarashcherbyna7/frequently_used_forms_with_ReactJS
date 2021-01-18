@@ -1,0 +1,38 @@
+.formsContainer
+  text-align: center
+  h2
+    margin-bottom: 0
+  .lineBlock
+    margin-bottom: 16px
+.formsDiv
+  display: flex
+  justify-content: space-around
+  flex-direction: column
+  margin: auto
+  .blockForms
+    display: flex
+    justify-content: space-around
+    width: 90%
+    margin: 16px auto
+    a
+      text-decoration: none
+      color: black
+      cursor: pointer
+      width: 23%
+      .formLink
+        padding-bottom: 20px
+        padding-top: 20px
+        border: 1px solid
+        border-radius: 5px
+        transition: .3s
+        &:hover
+          border: 1px solid #F38181
+          color: #F38181
+          background-color: #95E1D3
+          border-radius: 5px
+          transition: .3s
+.formsContainerWithoutModal
+    margin: 5% auto
+
+@import "FormsContainer_320.sass"
+@import "FormsContainer_768.sass"

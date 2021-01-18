@@ -1,0 +1,71 @@
+@import "../../variables_form7"
+
+.selectListDivForm7
+  position: relative
+  margin-right: 4px
+
+.inputDivForm7
+  position: relative
+
+  input
+    width: 241px
+    color: $text-color
+    border: 1px solid $main-border-color
+    border-radius: 5px
+    padding-bottom: 6px
+    padding-top: 6px
+    padding-left: 5px
+    appearance: none
+    outline: none
+
+    &[placeholder]
+      font-weight: bold
+
+    &:active, &:focus
+      border: 1px solid $input-border-color
+      box-shadow: 0 0 5px $input-shadow-color
+
+  img
+    width: 15px
+    top: 8px
+    right: 8px
+    position: absolute
+    cursor: pointer
+
+.selectListForm7
+  display: flex
+  flex-direction: column
+  width: 100px
+  position: absolute
+  list-style: none
+  bottom: -50px
+  right: 25px
+  border-radius: 5px
+  text-align: left
+  overflow: auto
+  background-color: whitesmoke
+  z-index: 1
+
+  li
+    align-self: flex-end
+    width: 115px
+    padding-top: 3px
+    padding-bottom: 3px
+    padding-left: 25px
+
+    &:hover
+      background-color: $input-shadow-color
+
+.errorsSelectListForm7
+  width: 240px
+  border: 1px solid $error-color
+
+.inputFeedbackSelectListForm7
+  position: absolute
+  top: 28px
+  left: -15px
+  color: $error-color
+  font-size: 11px
+  letter-spacing: 0.6px
+
+@import "MonthSelectList_320"

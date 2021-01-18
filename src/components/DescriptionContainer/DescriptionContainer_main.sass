@@ -1,0 +1,57 @@
+//Main styles of the second block:
+
+//descriptionContainer - container that holds all the blocks
+.descriptionContainer
+  display: flex
+  flex-direction: column
+
+  h2, div
+    align-self: center
+    margin-bottom: 0
+
+  .itemsDescriptionDiv
+    display: flex
+    justify-content: space-around
+    width: 95%
+    margin: 16px auto
+
+    .itemDescription
+      align-self: flex-start
+      display: flex
+      flex-direction: column
+      width: 30%
+
+      div
+        margin-bottom: 5px
+
+      .iconCogsDiv
+        color: #F38181
+        font-size: 34px
+
+      .itemHeadDiv
+        font-weight: bold
+
+      .itemTextDiv
+        width: 100%
+        text-align: justify
+        text-indent: 1.5em
+
+  .ScrollUpButton__Container
+    border: 1px solid #F38181
+    &:hover
+      border: 1px solid white
+
+    a
+      text-decoration: none
+
+
+  .ScrollUpButton__Toggled
+    border: 1px solid rgb(84, 184, 227)
+    &:hover
+      border: 1px solid white
+
+    a
+      text-decoration: none
+
+
+@import "DescriptionContainer_320"

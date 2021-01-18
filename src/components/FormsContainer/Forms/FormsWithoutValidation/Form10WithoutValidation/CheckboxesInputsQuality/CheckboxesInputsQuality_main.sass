@@ -1,0 +1,49 @@
+@import "../variables_form10"
+
+.containerInputQuality
+  width: 100%
+  display: flex
+  justify-content: space-between
+
+  div
+    align-self: center
+  .containerTextInputQuality
+    text-align: left
+    padding-left: 3px
+    letter-spacing: 1.5px
+    font-style: italic
+    font-size: 15px
+    font-weight: bold
+    opacity: 0.6
+  .inputQualityForm10
+    overflow: hidden
+    &:not(:checked) > input
+      display: none
+    &:not(:checked) > label
+      float: right
+      width: 32px
+      padding: 0
+      cursor: pointer
+      font-size: 35px
+      line-height: 35px
+      color: $shadow-color
+      text-shadow: 1px 1px $shadow-color
+      &:before
+        content: '★'
+    & > input:checked ~ label
+      color: $main-color
+      text-shadow: 1px 1px $shadow-color
+    &:not(:checked) > label:hover,
+    &:not(:checked) > label:hover ~ label
+      color: $main-color
+    & > input:checked + label:hover,
+    & > input:checked + label:hover ~ label,
+    & > input:checked ~ label:hover,
+    & > input:checked ~ label:hover ~ label,
+    & > label:hover ~ input:checked ~ label
+      color: $main-color
+      text-shadow: 1px 1px $shadow-color
+    & > label:active
+      position: relative
+
+@import "CheckboxesInputsQuality_320"

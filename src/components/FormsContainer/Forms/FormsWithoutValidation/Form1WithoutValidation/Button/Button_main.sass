@@ -1,0 +1,30 @@
+@import "../variables_form1"
+
+.buttonsDiv
+  width: 100%
+  text-align: right
+  border-top: 1px solid $border-main-color
+  padding-top: 15px
+  margin-bottom: 15px
+
+  div input
+    width: 100px
+    height: 30px
+    border: 1px solid $border-main-color
+    box-sizing: border-box
+    border-radius: 5px
+    transition: 0.4s
+    outline: none
+
+    &[value]
+      font-size: 14px
+      color: $main-color-text
+
+    &:hover
+      color: #ffffff
+      background-color: $label-checkbox-text-color
+      border: 0
+      outline: none
+      transition: 0.6s
+
+@import "Button_320"

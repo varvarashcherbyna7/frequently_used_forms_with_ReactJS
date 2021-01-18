@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500&display=swap')
+
+//variables:
+// 1. color
+// 2. font
+// 3. width
+// 4. directives
+
+
+//color
+$main-border-color: rgba(0, 0, 0, 0.1)
+$main-shadow-color: rgba(0, 0, 0, 0.3)
+$main-bg-color: rgba(255, 255, 255, 1)
+$main-color: rgba(0, 0, 128, 1)
+$text-color: white
+$input-border-color: rgba(0, 0, 255, 0.2)
+$input-shadow-color: rgba(0, 0, 255, 0.3)
+$input-border-error-color: rgba(255, 0, 0, 0.09)
+$input-shadow-error-color: rgba(255, 0, 0, 0.1)
+$error-text-color: red
+
+// font
+
+$main-font-family: 'Mulish', sans-serif
+$main-font-size: 24px
+
+// width
+
+$main-container-width: 480px
+$inputs-container-width: 460px
+
+// directives for:
+
+//// _main sass file
+
+%input-container-base
+  display: flex
+  flex-direction: column
+  position: relative
+  text-align: left
+  margin-bottom: 13px
+  font-size: $main-font-size/1.55
+  color: $main-color
+
+%input-base
+  border: 1px solid $main-border-color
+  border-radius: 5px
+  padding-bottom: 6px
+  padding-top: 6px
+  outline: none
+
+%input-in-focus
+  border: 1px solid $input-border-color
+  box-shadow: 0 0 5px $input-shadow-color
+
+%input-icon-base
+  position: absolute
+  right: 10px
+  bottom: 7px
+  color: $main-color
+
+//// InputAdultGuests and InputChildrenGuests
+
+%blockHint-base
+  display: none
+  position: absolute
+  transition: 0.5s
+  letter-spacing: 0
+  padding: 1px 2px
+  font-size: $main-font-size/2
+  font-weight: bold
+  right: 0
+  top: -8px
+  border-bottom: 1px solid $main-color
+  border-radius: 3px
+  background-color: $input-shadow-color
+  color: $text-color
+
+%triangleBlock-base
+  position: absolute
+  right: 10px
+  top: 17.5px
+  border: 10px solid transparent
+  border-top: 10px solid $main-color

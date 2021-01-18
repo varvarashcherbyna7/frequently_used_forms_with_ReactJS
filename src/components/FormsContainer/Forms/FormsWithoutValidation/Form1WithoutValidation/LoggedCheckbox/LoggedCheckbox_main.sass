@@ -1,0 +1,43 @@
+@import "../variables_form1"
+
+.checkbox
+  width: 100%
+  text-align: left
+
+.checkbox input[type='checkbox']
+  display: none
+
+.checkbox label
+  margin-left: 88px
+
+.checkbox label::before
+  content: ""
+  display: inline-block
+  width: 20px
+  height: 20px
+  border: 1px solid $border-main-color
+  border-radius: 2px
+  vertical-align: middle
+  margin-right: 10px
+
+.checkbox input[type='checkbox']:checked + .contentFormCheckboxText::before
+  background: url("img/check_mark.png") no-repeat 3px 3px
+  border: 1px solid $input-focus-border-color
+  box-shadow: 0 0 5px $input-focus-shadow-color
+  font-size: 0.6em
+
+.contentFormCheckboxText
+  font-size: smaller
+
+.contentFormCheckboxTextAgree
+  color: $main-color-text
+  margin-right: 5px
+
+.colorText
+  color: $label-checkbox-text-color
+
+.colorText:hover
+  color: $main-color-text
+
+
+@import "LoggedCheckbox_320"

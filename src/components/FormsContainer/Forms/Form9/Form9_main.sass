@@ -1,0 +1,71 @@
+@import "variables_form9"
+
+.containerForm9
+  width: $main-container-width
+  border: 1px solid $main-border-color
+  box-shadow: 0 0 10px $main-shadow-color
+  background-color: $main-bg-color
+  margin: 0 auto
+  border-radius: 5px
+
+  .form9
+    width: $form-width
+    display: flex
+    flex-direction: column
+    margin: 0 auto
+
+    .logoContainerForm9
+      width: 100%
+      text-align: left
+      padding-top: 10px
+      padding-bottom: 10px
+      letter-spacing: 1px
+      font-weight: bold
+      color: $color
+
+    .personInformationInputs
+      height: 32px
+      input
+        width: 276px
+
+    .inputsContainerForm9
+      display: flex
+      justify-content: space-between
+      height: 32px
+
+      p
+        align-self: center
+        height: 15px
+        font-size: 15px
+        color: $color
+        margin-left: 5px
+        letter-spacing: 1px
+
+      div
+        margin-bottom: 10px
+
+        input
+          @extend %input-base
+
+          &:focus, &:active
+            @extend %input-in-focus-active
+
+          &[placeholder]
+            padding-left: 7px
+
+            &:focus
+              @extend  %input-placeholder-focus
+
+          &::-webkit-input-placeholder
+            color: $color
+
+    div
+      margin-bottom: 10px
+
+      select
+        &:focus, &:active
+          border: 1px solid $input-focus-bg-color
+          box-shadow: 0 0 10px $input-focus-shadow-color
+          color: $color
+
+@import "Form9_320"

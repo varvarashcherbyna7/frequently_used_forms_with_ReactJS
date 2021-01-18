@@ -1,0 +1,48 @@
+@import "variables_form5"
+
+//Container directive
+%container-base
+  display: flex
+  justify-content: space-between
+
+//A container that includes a header (logo) and the form itself
+.containerForm5
+  @extend %container-base
+  flex-direction: column
+  width: 444px
+  margin: 25px auto
+  border: 1px solid $main-border-color
+  box-shadow: 0 0 10px $main-shadow-color
+  border-radius: 5px
+  font-size: small
+
+.logoContainerForm5
+  align-self: flex-start
+  width: 98%
+  margin: 0 auto
+  border-radius: 5px
+  border-bottom: 1px solid $main-border-color
+  solid-opacity: 0
+
+  div
+    text-align: left
+    padding: 13px 25px
+    letter-spacing: 1px
+    word-spacing: 4px
+    font-size: large
+
+.formContainerForm5
+  @extend %container-base
+  flex-direction: column
+  width: 428px
+  margin: 13px auto
+
+.inputsContainerForm5
+  @extend %container-base
+  margin-bottom: 13px
+
+.btnContainerForm5
+  @extend %container-base
+  margin-top: 13px
+
+@import "Form5_320"

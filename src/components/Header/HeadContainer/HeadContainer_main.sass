@@ -1,0 +1,119 @@
+//directive for the main container and for the description container
+%item-base
+  display: flex
+  flex-direction: column
+//directive for logo and menu
+%item-head
+  display: flex
+  justify-content: space-around
+
+//variables
+$font-head:  Montserrat, sans-serif
+$font-description: 'Montserrat-Bold', sans-serif
+$main-color: black
+$hover-color: bisque
+$hover-color-border-button: lightgoldenrodyellow
+
+//Main styles of the first block:
+
+//headContainer - container that holds all the blocks
+.headContainer
+  @extend %item-base
+  //Photo by Pok Rie from Pexels
+  background: url("../../../img/bg_header.jpg") repeat-x
+  background-size: 100%
+  font-family: $font-head
+  position: relative
+
+  .header
+    width: 100%
+    @extend %item-head
+    margin-top: 25px
+    letter-spacing: 1.3px
+    font-weight: bold
+    position: relative
+
+    div a
+      cursor: pointer
+      text-decoration: none
+      color: rgb(84, 184, 227)
+      text-shadow: 1px 1px 2px rgb(182,238,253), 0 0 1em $hover-color
+      &:hover
+        color: #F38181
+        text-shadow: 1px 1px 2px rgb(153, 214, 240), 0 0 1em $hover-color
+
+    .headerMenu
+      @extend %item-head
+      width: 45%
+      align-content: center
+      text-align: center
+      .itemHeaderMenu
+        height: 30px
+
+      div a
+        border-bottom: 1px solid rgba(0, 0, 0, 0)
+        text-decoration: none
+        color: rgb(84, 184, 227)
+        cursor: pointer
+        &:after
+          display: block
+          content: ""
+          height: 2px
+          width: 0
+          background-color: #F38181
+          border-bottom: 1px solid #F38181
+          transition: width .7s ease-in-out
+
+        &:hover
+          color: #F38181
+
+        &:hover:after, &:focus:after
+          border-bottom: 1px solid #F38181
+          width: 100%
+
+  .description
+    align-self: center
+    width: 100%
+    @extend %item-base
+
+    .containerTextLineHeader
+      display: flex
+      flex-direction: column
+      padding-top: 20px
+
+      .lineContainer:before
+        content: url("../../../img/blue_white.png")
+
+      &:hover .headText a
+        color: #F38181
+
+      &:hover .lineContainer:before
+        content: url("../../../img/line_red.png")
+
+    div, p
+      align-self: center
+
+    .headText
+      text-align: center
+      a
+        text-decoration: none
+        font-family: $font-description
+        color: rgb(84, 184, 227)
+        font-size: 26px
+        font-weight: bold
+        word-spacing: 0.3em
+        letter-spacing: 0.2em
+        margin-bottom: 0
+
+        //&:hover
+        //  color: #F38181
+
+    .descriptionTextHeader
+      letter-spacing: 1px
+      text-align: justify
+      text-indent: 1.5em
+      width: 95%
+
+@import 'HeadContainer_1824'
+@import "HeadContainer_768"
+@import "HeadContainer_320"

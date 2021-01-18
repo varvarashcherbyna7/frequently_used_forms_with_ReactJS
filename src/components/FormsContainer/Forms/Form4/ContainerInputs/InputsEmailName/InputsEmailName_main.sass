@@ -1,0 +1,50 @@
+@import "../../variables_form4"
+
+.nameEmailDivForm4
+  display: flex
+  flex-direction: column
+
+.inputTextForm4
+  align-self: flex-start
+  margin-left: 2px
+  margin-bottom: 5px
+  font-size: 12px
+
+.inputDivForm4 input
+    width: 177px
+    height: 20px
+    border: 1px solid $main-border-color
+    padding: 4px
+    border-radius: 3px
+    outline: 0
+
+.inputDivForm4 input:active, .inputDivForm4 input:focus
+  border: 1px solid $active-input-border-color
+  box-shadow: 0 0 5px $active-input-shadow-color
+
+.inputContainerForm4
+  position: relative
+
+  i
+    position: absolute
+    z-index: 1
+    top: 26px
+    right: 9px
+    font-size: large
+    color: $icon-color
+
+.inputDivForm4
+  position: relative
+
+.errorForm4
+  border: 1px solid $error-color
+
+.inputFeedbackForm4
+  position: absolute
+  font-size: 11px
+  letter-spacing: 0.5px
+  color: $error-color
+  bottom: -14px
+  right: 9px
+
+@import "InputsEmailName_320"

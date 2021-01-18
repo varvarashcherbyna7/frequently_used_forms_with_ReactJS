@@ -1,0 +1,29 @@
+@import "../../../variables_form3"
+
+.selectListDivFormRegistration, .checkboxFormRegistration
+  align-self: flex-start
+
+.checkboxFormRegistration input[type='checkbox']
+  display: none
+  border: 1px solid $input-focus-border-color
+
+.checkboxFormRegistration label::before
+  content: " "
+  display: inline-block
+  width: 18px
+  height: 18px
+  border: 1px solid $input-registration-border-color
+  border-radius: 2px
+  text-align: center
+  vertical-align: middle
+  margin-right: 10px
+
+.checkboxFormRegistration input[type='checkbox']:checked + .labelCheckboxFormRegistration::before
+  background: url("img/check_mark.png") no-repeat 2px 2px
+  border: 1px solid $input-focus-border-color
+  box-shadow: 0 0 3px $input-focus-shadow-color
+  font-size: 0.6em
+
+.textFormRegistration
+  font-size: smaller
+

@@ -1,0 +1,46 @@
+@import "../../variables_form7"
+
+.countryListForm7
+  position: relative
+  input
+    width: 196px
+    border: 1px solid $main-border-color
+    border-radius: 5px
+    padding-bottom: 6px
+    padding-top: 6px
+    appearance: none
+    outline: none
+    box-sizing: border-box
+    &[placeholder]
+      color: rgba(0, 0, 0, 0.6)
+      padding-left: 5px
+    &:active, &:focus
+      border: 1px solid $input-border-color
+      box-shadow: 0 0 5px $input-shadow-color
+  .selectListForm7
+    width: 185px
+    height: 90px
+    border: 1px solid $input-border-color
+    border-radius: 3px
+    color: $input-country-text-color
+    letter-spacing: 1px
+    background-color: $country-bg-color
+    position: absolute
+    z-index: 1
+    top: 14px
+    left: 7px
+    margin-left: 0
+    padding-left: 0
+    text-align: left
+    li
+      width: 100%
+      height: 100%
+      list-style-type: none
+      margin-left: 0
+      padding-top: 3px
+      padding-bottom: 3px
+      padding-left: 5px
+      &:hover
+        background-color: $input-shadow-color
+
+@import "CountryInput_320"

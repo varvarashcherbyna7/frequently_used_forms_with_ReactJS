@@ -1,0 +1,54 @@
+@import "variables_form7"
+
+.form7
+  width: 490px
+  margin: 0 auto
+  border: 1px solid $main-border-color
+  box-shadow: 0 0 10px $main-shadow-color
+  background-color: $main-bg-color
+  border-radius: 5px
+  font-size: small
+
+.containerForm7
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  width: 465px
+  margin: 13px auto
+
+.inputContainerForm7
+  display: flex
+  justify-content: space-between
+  padding-bottom: 13px
+
+.cardNumberDivForm7
+  display: flex
+  justify-content: space-between
+
+.lineDivForm7
+  position: relative
+  margin-bottom: 13px
+
+  &:before
+    content: ""
+    position: absolute
+    width: 100%
+    border-bottom: 1px solid $main-border-color
+    bottom: 0
+
+.expirationDateTextForm7
+  align-self: center
+  color: $text-color
+  padding-left: 3px
+  letter-spacing: 1px
+  position: relative
+
+  &:before
+    content: ""
+    width: 465px
+    position: absolute
+    border-bottom: 1px solid $main-border-color
+    left: 0
+    top: 36px
+
+@import "Form7_320"

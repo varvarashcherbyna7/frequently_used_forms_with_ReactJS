@@ -1,0 +1,27 @@
+@import "../variables_form7"
+
+.btnContainerForm7
+  display: flex
+  justify-content: flex-end
+  padding-top: 13px
+
+.btnDivForm7
+  input
+    padding: 7px 42px
+    border: 1px solid $main-border-color
+    border-radius: 5px
+    font-weight: bold
+    color: $btn-text-color
+    outline: 0
+    transition: 0.5s
+
+    &[value]
+      color: #32302e
+
+    &:hover
+      transition: 0.5s
+      background-color: $btn-bg-color
+      font-weight: bold
+      color: $btn-hover-text-color
+
+@import "SubmitInput_320"

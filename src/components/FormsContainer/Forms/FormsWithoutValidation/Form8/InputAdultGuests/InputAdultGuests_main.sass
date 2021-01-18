@@ -1,0 +1,31 @@
+@import "../variables_form8"
+
+.inputAdultGuestsForm8
+  @extend  %input-container-base
+
+  .textInputAdultGuestsForm8
+    margin-left: 5px
+
+  input
+    width: $inputs-container-width/2 - 11
+    @extend %input-base
+
+    &:active, &:focus
+      @extend %input-in-focus
+
+    &[placeholder]
+      padding-left: 5px
+
+    &:active + .blockHintForm8, &:focus + .blockHintForm8
+      display: block
+
+  .blockHintForm8
+    @extend %blockHint-base
+
+  .triangleForm8
+    @extend  %triangleBlock-base
+
+  i
+    @extend %input-icon-base
+
+@import "InputAdultGuests_320"

@@ -1,0 +1,42 @@
+@import "../variables_form2"
+
+//Submit button container styles
+.blockIBtn
+  display: flex
+  justify-content: flex-end
+  flex-wrap: wrap
+  width: 445px
+  position: relative
+
+  //Line styles above the submit button container
+  &::before
+    content: ''
+    position: absolute
+    top: -10px
+    left: 0
+    width: 100%
+    border-top: 1px solid $border-main-color
+
+//Submit button styles
+.btn
+  width: 125px
+  height: 30px
+  margin-bottom: 5px
+  color: $btn-color
+  border: $btn-border-color 1px solid
+  background-color: $btn-border-color
+  border-radius: 5px
+  font-size: 14px
+  outline: none
+  transition: 0.3s
+
+//Styles on mouse hover over the submit button
+.btn:hover
+  background-color: $btn-hover-color
+  border:  1px solid
+  box-sizing: border-box
+  color: $btn-border-color
+  font-weight: bold
+  transition: 0.3s
+
+@import "ButtonSend_320"

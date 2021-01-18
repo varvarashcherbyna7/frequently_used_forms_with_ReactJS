@@ -1,0 +1,56 @@
+@import "../variables_form9"
+
+.selectListDivForm9
+  position: relative
+  select
+    width: 378px
+    border-radius: 5px
+    padding-bottom: 7px
+    padding-top: 7px
+    outline: none
+    border: 1px solid $main-border-color
+    color: $color
+    letter-spacing: 1px
+    padding-left: 5px
+    appearance: none
+
+    option
+      padding-bottom: 7px
+      padding-top: 7px
+
+      &[value="0_1"]
+        font-weight: bold
+        letter-spacing: 1px
+
+  .arrowForm9
+    position: absolute
+    right: 13px
+    top: 10px
+    border: solid $color
+    border-width: 0 3px 3px 0
+    display: inline-block
+    padding: 3px
+    transform: rotate(45deg)
+    -webkit-transform: rotate(45deg)
+
+  .inputFeedbackSelectListForm9
+    color: red
+    position: absolute
+    bottom: -30px
+    left: -15px
+    font-size: 11px
+    letter-spacing: 1px
+
+//.errorsSelectListForm9
+//  width: 240px
+//  border: 1px solid $error-color
+//
+//.inputFeedbackSelectListForm9
+//  position: absolute
+//  top: 28px
+//  left: 5px
+//  color: $error-color
+//  font-size: 11px
+//  letter-spacing: 0.6px
+
+@import "MonthInput_320"

@@ -1,0 +1,75 @@
+@import "../variables_form9"
+
+.radioInputsContainerForm9
+  align-self: flex-start
+  display: flex
+  flex-direction: row
+  position: relative
+  margin-top: 7px
+  margin-bottom: 7px
+  padding-left: 13px
+  color: $color
+
+  .inputFeedbackRadioForm9
+    color: red
+    position: absolute
+    bottom: -15px
+    left: 20px
+    font-size: 11px
+    letter-spacing: 1px
+
+.radioInputDivForm9
+  display: flex
+  justify-content: space-between
+  margin-right: 18px
+
+  input[type="radio"]
+    opacity: 0
+
+
+    &:checked + label::after
+      content: url("./circle.png")
+      transition: 1s
+
+    &:checked + label::before
+      height: 21px
+      width: 21px
+      border-radius: 11px
+      border: 1px solid $input-focus-bg-color
+      box-shadow: 0 0 5px $input-focus-shadow-color
+      transition: 0.1s
+
+    &:checked + label
+      color: $color
+
+  label
+    position: relative
+    letter-spacing: 1px
+    font-weight: inherit
+    margin-left: 13px
+
+    &:before
+      content: ""
+      position: absolute
+      height: 21px
+      width: 21px
+      border: 1px solid $main-border-color
+      border-radius: 11px
+      top: -4px
+      left: -30px
+
+    &:after
+      content: ''
+      position: absolute
+      left: -31px
+      top: -5px
+
+//.inputFeedbackRadioForm9
+//  position: absolute
+//  right: 206px
+//  bottom: -13px
+//  color: $error-color
+//  font-size: 11px
+//  letter-spacing: 0.6px
+
+@import "RadioInput_320"

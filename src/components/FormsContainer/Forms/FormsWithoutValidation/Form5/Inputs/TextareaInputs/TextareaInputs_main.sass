@@ -1,0 +1,50 @@
+@import "../../variables_form5"
+
+.textareaInputContainer
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+.textareaInputText
+  align-self: flex-start
+  padding-left: 5px
+  margin-bottom: 2px
+  text-transform: uppercase
+  letter-spacing: 1px
+  position: relative
+
+.textareaImgDiv img
+  width: 7px
+  position: absolute
+  top: 1px
+
+.textareaInputDiv
+  align-self: flex-start
+  position: relative
+
+  textarea
+    width: 419px
+    border: 1px solid $main-border-color
+    border-radius: 5px
+    outline: none
+
+    &:active, &:focus
+      border: 1px solid $active-input-border-color
+      box-shadow: 0 0 5px $active-input-shadow-color
+
+  textarea[placeholder]
+    padding-left: 5px
+
+.textareaErrors
+  width: 240px
+  border: 1px solid $error-color
+
+.textareaInputFeedback
+  position: absolute
+  top: 165.8px
+  right: 0
+  color: $error-color
+  font-size: 11px
+  letter-spacing: 0.6px
+
+@import "TextareaInputs_320"

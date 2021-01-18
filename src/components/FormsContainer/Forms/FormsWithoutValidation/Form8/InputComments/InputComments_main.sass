@@ -1,0 +1,21 @@
+@import "../variables_form8"
+
+.inputCommentsForm8
+  @extend  %input-container-base
+
+  span
+    margin-left: 5px
+
+  textarea
+    @extend %input-base
+
+    &:active, &:focus
+      @extend %input-in-focus
+
+    &[placeholder]
+      padding-left: 5px
+
+  i
+    @extend %input-icon-base
+
+@import "InputComments_320"

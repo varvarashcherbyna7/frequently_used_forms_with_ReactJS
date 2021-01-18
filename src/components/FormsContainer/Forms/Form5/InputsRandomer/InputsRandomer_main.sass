@@ -1,0 +1,77 @@
+@import "../variables_form5"
+
+.keyInputDiv
+  align-self: center
+  display: flex
+  justify-content: space-between
+
+.randomDiv
+  text-align: center
+  border-radius: 5px
+  color: $random-btn-text-color
+  font-size: large
+
+  p
+    width: 107px
+    height: 30px
+    padding-top: 1px
+    padding-bottom: 1px
+    margin: 0 auto
+    bottom: 2px
+    background-color: $random-div-bg-color
+    letter-spacing: 2px
+    font-weight: bold
+    border-radius: 5px
+
+    span
+      padding-top: 3px
+      display: block
+      transform: rotate(-8deg)
+
+.btnForArrows
+  border: none
+  background-color: $arrows-btn-bg-color
+  outline: none
+
+.arrowsImgDiv
+  align-self: center
+
+  img
+    width: 23px
+
+  i
+    font-size: 18px
+
+.keyInput
+  display: flex
+  position: relative
+
+  input
+    border: 1px solid $main-border-color
+    border-radius: 5px
+    outline: 0
+    width: 100px
+    padding-top: 6.5px
+    padding-bottom: 6.5px
+
+    [placeholder]
+      padding-left: 26px
+
+    &:active, &:focus
+      border: 1px solid $active-input-border-color
+      box-shadow: 0 0 5px $active-input-shadow-color
+
+.errorsForm5
+  border: 1px solid $error-color
+
+.inputFeedbackForms5
+  position: absolute
+  width: 125px
+  height: 10px
+  top: 32px
+  left: 1px
+  color: $error-color
+  font-size: 11px
+  letter-spacing: 0.6px
+
+@import "InputsRandomer_320"

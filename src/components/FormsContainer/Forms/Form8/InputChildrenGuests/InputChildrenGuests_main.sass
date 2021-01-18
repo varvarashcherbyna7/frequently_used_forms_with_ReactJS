@@ -1,0 +1,36 @@
+@import "../variables_form8"
+
+.inputChildrenGuestsForm8
+  @extend  %input-container-base
+
+  span
+    margin-left: 5px
+
+  input
+    width: $inputs-container-width/2 - 11
+    @extend %input-base
+
+    &:active, &:focus
+      @extend %input-in-focus
+
+    &[placeholder]
+      padding-left: 5px
+
+    &:active + .blockHintForm8, &:focus + .blockHintForm8
+      display: block
+
+    &[type=number]::-webkit-inner-spin-button, &[type=number]::-webkit-outer-spin-button
+      -webkit-appearance: none
+
+  .blockHintForm8
+    @extend %blockHint-base
+
+  .triangleForm8
+    @extend  %triangleBlock-base
+
+  i
+    @extend %input-icon-base
+
+
+
+@import "InputChildrenGuests_320"

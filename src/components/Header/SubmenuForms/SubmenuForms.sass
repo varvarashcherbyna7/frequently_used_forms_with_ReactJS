@@ -1,0 +1,35 @@
+.dropdown
+  position: relative
+  display: inline-block
+  .mainmenubtn
+    //color: white
+    border: none
+    cursor: pointer
+    //padding: 20px
+    margin-top: 3px
+  .dropdown-child
+    display: none
+    opacity: 0
+    transition: all 0.5s ease-out
+    background-color: #fff
+    border-radius: 3px
+    min-width: 285px
+    position: absolute
+    right: 1%
+    font-size: 13px
+    padding: 5px 5px
+    a
+      width: 100%
+      color: white
+      text-decoration: none
+      display: block
+      &:after
+        transition: unset
+        border-bottom: unset
+      &:hover:after, &:focus:after
+        width: 0
+.dropdown:hover .dropdown-child
+  display: block
+  opacity: 1
+  transition: all 1s ease-out
+.dropdown:hover a

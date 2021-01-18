@@ -1,0 +1,43 @@
+@import "../variables_form9"
+
+.cardNameInputForm9
+  position: relative
+  margin-bottom: 13px
+
+  input
+    width: 98.105%
+    @extend %input-base
+
+    &[placeholder]
+      padding-left: 7px
+
+      &:focus
+        @extend  %input-placeholder-focus
+
+    &:active, &:focus
+      @extend %input-in-focus-active
+
+    &::-webkit-input-placeholder
+      color: $color
+
+  .inputFeedbackCardNameForm9
+    color: red
+    position: absolute
+    bottom: -19px
+    right: 5px
+    font-size: 11px
+    letter-spacing: 1px
+
+//.errorsCardNameForm9
+//  width: 240px
+//  border: 1px solid $error-color
+//
+//.inputFeedbackCardNameForm9
+//  position: absolute
+//  top: 28px
+//  right: 8px
+//  color: $error-color
+//  font-size: 11px
+//  letter-spacing: 0.6px
+
+@import "NameOnCard_320"

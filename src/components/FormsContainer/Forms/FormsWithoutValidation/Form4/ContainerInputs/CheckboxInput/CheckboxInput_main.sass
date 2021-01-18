@@ -1,0 +1,31 @@
+@import "../../variables_form4"
+
+.checkboxDivForm4
+  align-self: flex-start
+  display: flex
+  padding-bottom: 10px
+
+  input[type='checkbox']
+    display: none
+
+  label::before
+    content: " "
+    display: inline-block
+    width: 20px
+    height: 20px
+    border: 1px solid $main-border-color
+    border-radius: 5px
+    vertical-align: middle
+    margin-right: 10px
+
+  input[type='checkbox']:checked + .labelCheckboxForm4::before
+    background: url("img/check_mark.png") no-repeat 3px 3px
+    border: 1px solid $active-input-border-color
+    box-shadow: 0 0 5px $active-input-shadow-color
+    font-size: 0.6em
+
+.textForm4
+  font-size: small
+  align-self: center
+
+@import "CheckboxInput_320"

@@ -1,0 +1,53 @@
+@import "../variables_form2"
+
+//Container for the input field and for the icon
+.inputDivForm2
+  position: relative
+
+//Styles will apply to all paired inner containers of inputDivForm2
+.inputDivForm2:nth-child(2n)
+  padding-left: 8px
+
+//Styles for the input field
+.inputDivForm2 input
+  width: 210px
+  line-height: 26px
+  border: 1px solid $border-main-color
+  border-radius: 5px
+  outline: none
+
+//Styles for the icon in the input field
+.inputDivForm2 i
+  position: absolute
+  top: 8px
+  right: 10px
+  font-size: 14px
+  color: $icon-color
+
+//Focus and active field styles
+.inputDivForm2 input:active,
+.inputDivForm2 input:focus
+  border: 1px solid $border-color-input
+  box-shadow: 0 0 5px $shadow-color-input
+
+//Styling tooltip text in an input field
+.inputDivForm2 input[placeholder]
+  padding-left: 5px
+  font-size: 12px
+  letter-spacing: 1px
+
+//Field styles on data entry error
+.errorsForm2
+  width: 240px
+  border: 1px solid $errors-color
+
+//Error pop-up text styles
+.inputFeedbackForm2
+  position: absolute
+  top: 27.5px
+  right: 8px
+  color: $errors-color
+  font-size: 11px
+  letter-spacing: 0.6px
+
+@import "InputsInformation_320"

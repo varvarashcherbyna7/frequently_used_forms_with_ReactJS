@@ -1,0 +1,37 @@
+//variables:
+//1). color
+//2). width
+//3). inputs style
+
+
+//1). color
+$main-border-color: rgba(0, 0, 0, 0.1)
+$main-shadow-color: rgba(0, 0, 0, 0.3)
+$main-bg-color: rgba(255, 255, 255, 1)
+$color: black
+$input-color: rgba(137, 196, 244, 0.6)
+$input-focus-bg-color: rgba(137, 196, 244, 0.9)
+$input-focus-shadow-color: rgba(137, 196, 244, 0.5)
+
+//2). width
+$main-container-width: 600px
+$form-width: $main-container-width - 20
+
+//3). inputs style
+%input-base
+  border-radius: 5px
+  padding-bottom: 7px
+  padding-top: 7px
+  outline: none
+  appearance: none
+  border: 1px solid $main-border-color
+
+%input-in-focus-active
+  border: 1px solid $input-focus-bg-color
+  box-shadow: 0 0 10px $input-focus-shadow-color
+  color: $color
+
+%input-placeholder-focus
+  font-weight: bold
+  letter-spacing: 1px
+  padding-left: 8px

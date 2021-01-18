@@ -1,0 +1,32 @@
+@import "../variables_form9"
+
+.addressInputDivForm9
+  margin-bottom: 7px
+  height: 32px
+  position: relative
+  input
+    width: 98.105%
+    @extend %input-base
+
+    &:focus, &:active
+      @extend %input-in-focus-active
+
+    &[placeholder]
+        padding-left: 7px
+
+        &:focus
+          @extend  %input-placeholder-focus
+
+    &::-webkit-input-placeholder
+        color: $color
+
+  .inputFeedbackAddressForm9
+    color: red
+    position: absolute
+    bottom: -20px
+    right: 5px
+    font-size: 11px
+    letter-spacing: 1px
+
+
+@import "AddressInput_320"

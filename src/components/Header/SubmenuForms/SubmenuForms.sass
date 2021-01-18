@@ -8,8 +8,10 @@
     //padding: 20px
     margin-top: 3px
   .dropdown-child
-    display: none
-    opacity: 0
+    //display: none
+    //opacity: 0
+    overflow: hidden
+    height: 0
     transition: all 0.5s ease-out
     background-color: #fff
     border-radius: 3px
@@ -17,7 +19,6 @@
     position: absolute
     right: 1%
     font-size: 13px
-    padding: 5px 5px
     a
       width: 100%
       color: white
@@ -29,7 +30,8 @@
       &:hover:after, &:focus:after
         width: 0
 .dropdown:hover .dropdown-child
-  display: block
-  opacity: 1
-  transition: all 1s ease-out
+  overflow: visible
+  height: 41px
+  //padding: 5px 5px
+  transition: all 0.5s ease-out
 .dropdown:hover a

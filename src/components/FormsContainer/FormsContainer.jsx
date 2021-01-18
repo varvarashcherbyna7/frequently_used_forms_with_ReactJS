@@ -22,18 +22,18 @@ import Form7 from "./Forms/Form7/Form7"
 import Form8 from "./Forms/Form8/Form8"
 import Form9 from "./Forms/Form9/Form9"
 import Form10 from "./Forms/Form10/Form10"
-import ModalForm10WithoutValidation
-    from "./Forms/FormsWithoutValidation/Form10WithoutValidation/ModalForm10WithoutValidation"
-import ModalForm1WithoutValidation
-    from "./Forms/FormsWithoutValidation/Form1WithoutValidation/ModalForm1ModalForm1WithoutValidation"
-import ModalForm2WithoutValidation from "./Forms/FormsWithoutValidation/Form2/ModalForm2WithoutValidation"
-import ModalForm3WithoutValidation from "./Forms/FormsWithoutValidation/Form3/ModalForm3WithoutValidation"
-import ModalForm4WithoutValidation from "./Forms/FormsWithoutValidation/Form4/ModalForm4WithoutValidation"
-import ModalForm5WithoutValidation from "./Forms/FormsWithoutValidation/Form5/ModalForm5WithoutValidation"
-import ModalForm6WithoutValidation from "./Forms/FormsWithoutValidation/Form6/ModalForm6WithoutValidation"
-import ModalForm7WithoutValidation from "./Forms/FormsWithoutValidation/Form7/ModalForm7WithoutValidation"
-import ModalForm8WithoutValidation from "./Forms/FormsWithoutValidation/Form8/ModalForm8WithoutValidation"
-import ModalForm9WithoutValidation from "./Forms/FormsWithoutValidation/Form9/ModalForm9WithoutValidation"
+// import ModalForm10WithoutValidation
+//     from "./Forms/FormsWithoutValidation/Form10WithoutValidation/ModalForm10WithoutValidation"
+// import ModalForm1WithoutValidation
+//     from "./Forms/FormsWithoutValidation/Form1WithoutValidation/ModalForm1ModalForm1WithoutValidation"
+// import ModalForm2WithoutValidation from "./Forms/FormsWithoutValidation/Form2/ModalForm2WithoutValidation"
+// import ModalForm3WithoutValidation from "./Forms/FormsWithoutValidation/Form3/ModalForm3WithoutValidation"
+// import ModalForm4WithoutValidation from "./Forms/FormsWithoutValidation/Form4/ModalForm4WithoutValidation"
+// import ModalForm5WithoutValidation from "./Forms/FormsWithoutValidation/Form5/ModalForm5WithoutValidation"
+// import ModalForm6WithoutValidation from "./Forms/FormsWithoutValidation/Form6/ModalForm6WithoutValidation"
+// import ModalForm7WithoutValidation from "./Forms/FormsWithoutValidation/Form7/ModalForm7WithoutValidation"
+// import ModalForm8WithoutValidation from "./Forms/FormsWithoutValidation/Form8/ModalForm8WithoutValidation"
+// import ModalForm9WithoutValidation from "./Forms/FormsWithoutValidation/Form9/ModalForm9WithoutValidation"
 
 class FormsContainer extends React.Component {
     render() {
@@ -44,105 +44,105 @@ class FormsContainer extends React.Component {
                 <div className='lineBlock'><img src={line_red} alt="line"/></div>
                 <div className='formsDiv'>
                     <div className='blockForms'>
-                        <NavLink to='/form1'>
+                        <NavLink to='/frequently_used_forms_with_ReactJS/form1'>
                             <div className='formLink'>Login</div>
                         </NavLink>
-                        <NavLink to='/form2'>
+                        <NavLink to='/frequently_used_forms_with_ReactJS/form2'>
                             <div className='formLink'>Order services</div>
                         </NavLink>
-                        <NavLink to='/form3'>
+                        <NavLink to='/frequently_used_forms_with_ReactJS/form3'>
                             <div className='formLink'>Registration</div>
                         </NavLink>
-                        <NavLink to='/form4'>
+                        <NavLink to='/frequently_used_forms_with_ReactJS/form4'>
                             <div className='formLink'>Contacts</div>
                         </NavLink>
                     </div>
                     <div className='blockForms'>
-                        <NavLink to='/form5'>
+                        <NavLink to='/frequently_used_forms_with_ReactJS/form5'>
                             <div className='formLink'>Easy Contact</div>
                         </NavLink>
-                        <NavLink to='/form6'>
+                        <NavLink to='/frequently_used_forms_with_ReactJS/form6'>
                             <div className='formLink'>Comment</div>
                         </NavLink>
-                        <NavLink to='/form7'>
+                        <NavLink to='/frequently_used_forms_with_ReactJS/form7'>
                             <div className='formLink'>Checkout</div>
                         </NavLink>
-                        <NavLink to='/form8'>
+                        <NavLink to='/frequently_used_forms_with_ReactJS/form8'>
                             <div className='formLink'>Booking</div>
                         </NavLink>
                     </div>
                     <div className='blockForms'>
-                        <NavLink to='/form9'>
+                        <NavLink to='/frequently_used_forms_with_ReactJS/form9'>
                             <div className='formLink'>Checkout - 2</div>
                         </NavLink>
-                        <NavLink to='/form10'>
+                        <NavLink to='/frequently_used_forms_with_ReactJS/form10'>
                             <div className='formLink'>Feedback</div>
                         </NavLink>
                     </div>
                 </div>
-                <Route path='/form1' render={() => (<ModalForm1/>)}/>
-                <Route path='/form2' render={() => (<ModalForm2/>)}/>
-                <Route path='/form3' render={() => (<ModalForm3/>)}/>
-                <Route path='/form4' render={() => (<ModalForm4/>)}/>
-                <Route path='/form5' render={() => (<ModalForm5/>)}/>
-                <Route path='/form6' render={() => (<ModalForm6/>)}/>
-                <Route path='/form7' render={() => (<ModalForm7/>)}/>
-                <Route path='/form8' render={() => (<ModalForm8/>)}/>
-                <Route path='/form9' render={() => (<ModalForm9/>)}/>
-                <Route path='/form10' render={() => (<ModalForm10/>)}/>
+                <Route path='/frequently_used_forms_with_ReactJS/form1' render={() => (<ModalForm1/>)}/>
+                <Route path='/frequently_used_forms_with_ReactJS/form2' render={() => (<ModalForm2/>)}/>
+                <Route path='/frequently_used_forms_with_ReactJS/form3' render={() => (<ModalForm3/>)}/>
+                <Route path='/frequently_used_forms_with_ReactJS/form4' render={() => (<ModalForm4/>)}/>
+                <Route path='/frequently_used_forms_with_ReactJS/form5' render={() => (<ModalForm5/>)}/>
+                <Route path='/frequently_used_forms_with_ReactJS/form6' render={() => (<ModalForm6/>)}/>
+                <Route path='/frequently_used_forms_with_ReactJS/form7' render={() => (<ModalForm7/>)}/>
+                <Route path='/frequently_used_forms_with_ReactJS/form8' render={() => (<ModalForm8/>)}/>
+                <Route path='/frequently_used_forms_with_ReactJS/form9' render={() => (<ModalForm9/>)}/>
+                <Route path='/frequently_used_forms_with_ReactJS/form10' render={() => (<ModalForm10/>)}/>
 
                 <a name="with_validation_without_modal"/>
                 <h2>Forms with validation and without modal</h2>
                 <div className='lineBlock'><img src={line_red} alt="line"/></div>
                 <div className='formsDiv'>
                     <div className='blockForms'>
-                        <NavLink to='/form1_1'>
+                        <NavLink to='/frequently_used_forms_with_ReactJS/form1_1'>
                             <div className='formLink'>Login</div>
                         </NavLink>
-                        <NavLink to='/form2_2'>
+                        <NavLink to='/frequently_used_forms_with_ReactJS/form2_2'>
                             <div className='formLink'>Order services</div>
                         </NavLink>
-                        <NavLink to='/form3_3'>
+                        <NavLink to='/frequently_used_forms_with_ReactJS/form3_3'>
                             <div className='formLink'>Registration</div>
                         </NavLink>
-                        <NavLink to='/form4_4'>
+                        <NavLink to='/frequently_used_forms_with_ReactJS/form4_4'>
                             <div className='formLink'>Contacts</div>
                         </NavLink>
                     </div>
                     <div className='blockForms'>
-                        <NavLink to='/form5_5'>
+                        <NavLink to='/frequently_used_forms_with_ReactJS/form5_5'>
                             <div className='formLink'>Easy Contact</div>
                         </NavLink>
-                        <NavLink to='/form6_6'>
+                        <NavLink to='/frequently_used_forms_with_ReactJS/form6_6'>
                             <div className='formLink'>Comment</div>
                         </NavLink>
-                        <NavLink to='/form7_7'>
+                        <NavLink to='/frequently_used_forms_with_ReactJS/form7_7'>
                             <div className='formLink'>Checkout</div>
                         </NavLink>
-                        <NavLink to='/form8_8'>
+                        <NavLink to='/frequently_used_forms_with_ReactJS/form8_8'>
                             <div className='formLink'>Booking</div>
                         </NavLink>
                     </div>
                     <div className='blockForms'>
-                        <NavLink to='/form9_9'>
+                        <NavLink to='/frequently_used_forms_with_ReactJS/form9_9'>
                             <div className='formLink'>Checkout - 2</div>
                         </NavLink>
-                        <NavLink to='/form10_10'>
+                        <NavLink to='/frequently_used_forms_with_ReactJS/form10_10'>
                             <div className='formLink'>Feedback</div>
                         </NavLink>
                     </div>
                 </div>
                 <div className="formsContainerWithoutModal">
-                    <Route path='/form1_1' render={() => (<Form1/>)}/>
-                    <Route path='/form2_2' render={() => (<Form2/>)}/>
-                    <Route path='/form3_3' render={() => (<Form3/>)}/>
-                    <Route path='/form4_4' render={() => (<Form4/>)}/>
-                    <Route path='/form5_5' render={() => (<Form5/>)}/>
-                    <Route path='/form6_6' render={() => (<FormComment/>)}/>
-                    <Route path='/form7_7' render={() => (<Form7/>)}/>
-                    <Route path='/form8_8' render={() => (<Form8/>)}/>
-                    <Route path='/form9_9' render={() => (<Form9/>)}/>
-                    <Route path='/form10_10' render={() => (<Form10/>)}/>
+                    <Route path='/frequently_used_forms_with_ReactJS/form1_1' render={() => (<Form1/>)}/>
+                    <Route path='/frequently_used_forms_with_ReactJS/form2_2' render={() => (<Form2/>)}/>
+                    <Route path='/frequently_used_forms_with_ReactJS/form3_3' render={() => (<Form3/>)}/>
+                    <Route path='/frequently_used_forms_with_ReactJS/form4_4' render={() => (<Form4/>)}/>
+                    <Route path='/frequently_used_forms_with_ReactJS/form5_5' render={() => (<Form5/>)}/>
+                    <Route path='/frequently_used_forms_with_ReactJS/form6_6' render={() => (<FormComment/>)}/>
+                    <Route path='/frequently_used_forms_with_ReactJS/form7_7' render={() => (<Form7/>)}/>
+                    <Route path='/frequently_used_forms_with_ReactJS/form8_8' render={() => (<Form8/>)}/>
+                    <Route path='/frequently_used_forms_with_ReactJS/form9_9' render={() => (<Form9/>)}/>
+                    <Route path='/frequently_used_forms_with_ReactJS/form10_10' render={() => (<Form10/>)}/>
                 </div>
 
                 {/*<a name="without_validation_with_modal"/>*/}
